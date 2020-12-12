@@ -44,7 +44,7 @@ for passport in passports:
             flag2 = False
             break
         if check == 'byr':
-            if len(value) != 4 or not (1920 <= int(value) <= 2020):
+            if len(value) != 4 or not (1920 <= int(value) <= 2002):
                 flag2 = False
                 break
         if check == 'iyr':
