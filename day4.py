@@ -91,7 +91,7 @@ for passport in passports:
         n[0] += 1
 
     if flag1 and flag2:
-        print(passport['eyr'])
         n[1] += 1
-print()
-print(n)
+
+
+print('Part 1 = {}\nPart 2 = {}'.format(n[0], n[1]))
