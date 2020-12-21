@@ -1,4 +1,4 @@
-"""Loads a text file from disk and returns every single line as a entry in an array"""
+"""Loads a text file from disk and returns every single line as a entry in a list"""
 
 
 def file_input(file_name, convert=str, matrix=False):
@@ -14,6 +14,7 @@ def file_input(file_name, convert=str, matrix=False):
     else:
         for line in file:
             data.append(convert(line.strip('\n')))
+    file.close()
     return data.copy()
 
 
